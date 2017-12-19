@@ -1,0 +1,393 @@
+/**/
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+body{
+margin: 0; 
+    width: 100%;
+    height: 100%;
+}
+.main_screen{
+  position: relative;
+}
+
+* {
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;        
+}
+
+.main_screen a {/*aタグを画像の真ん中に*/
+/*background: white;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 80px;/*文字サイズ*/
+  border: solid white 5px; /*線で囲う*/
+  padding: 7px;/*文字と線の間の余白*/
+  color: white;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
+  
+.Music_list{
+  position: relative;
+}
+
+.Music_list a {/*aタグを画像の真ん中に*/
+background: white;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 40px;/*文字サイズ*/
+  border: solid black 5px; /*線で囲う*/
+  padding: 7px;/*文字と線の間の余白*/
+  color: black;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
+  
+.main_list_1{
+  position: relative;
+}
+
+.main_list_1 a {/*aタグを画像の真ん中に*/
+background: white;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 40px;/*文字サイズ*/
+  border: solid black 5px; /*線で囲う*/
+  padding: 7px;/*文字と線の間の余白*/
+  color: black;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
+.main_list_2{
+  position: relative;
+}
+
+.main_list_2 a {/*aタグを画像の真ん中に*/
+background: white;
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 40px;/*文字サイズ*/
+  border: solid black 5px; /*線で囲う*/
+  padding: 7px;/*文字と線の間の余白*/
+  color: black;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
+
+.main_list_3{
+  position: relative;
+}
+
+.main_list_3 a {/*aタグを画像の真ん中に*/
+background: white;
+  position: fixed;
+  top: 50%;
+  left: 30%;
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 40px;/*文字サイズ*/
+  border: solid black 5px; /*線で囲う*/
+  padding: 7px;/*文字と線の間の余白*/
+  color: black;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
+  
+.main_list_4{
+  position: relative;
+}
+
+.main_list_4 a {/*aタグを画像の真ん中に*/
+background: white;
+  position: fixed;
+  top: 60%;
+  left: 30%;
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 40px;/*文字サイズ*/
+  border: solid black 5px; /*線で囲う*/
+  padding: 7px;/*文字と線の間の余白*/
+  color: black;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
+
+.prev_img{
+  position: relative;
+}
+
+.prev_img img {/*aタグを画像の真ん中に*/
+  position: fixed;
+  top: 30%;
+  left: 60%;
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 40px;/*文字サイズ*/
+  color: black;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
+  
+.prev_stt{
+  position: relative;
+}
+
+.prev_stt a {/*aタグを画像の真ん中に*/
+background: pink;
+  position: fixed;
+  top: 70%;
+  left: 62%;
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 40px;/*文字サイズ*/
+  border: solid black 5px; /*線で囲う*/
+  padding: 7px;/*文字と線の間の余白*/
+  color: black;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
+
+.track_title {
+     position: relative; 
+       position: fixed;
+  top: 20%;
+  left: 62%;
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 40px;/*文字サイズ*/
+  padding: 7px;/*文字と線の間の余白*/
+  color: black;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+}
+
+.fadeout {
+    animation: fadeOut 1s;
+    animation-fill-mode: both;
+}
+@keyframes fadeOut {
+0% {
+    opacity: 1;
+}
+100%{
+    opacity: 0;
+}
+}
+.tap_to_fadeout {
+    font-family: musiceria_font;
+    position: relative; 
+    position: fixed;
+    top: 62%;
+    left: 37%;
+    font-size: 40px;
+    color: white;
+    font-family: fantasy;
+    animation: fadeOut 3s;
+    animation-fill-mode: both;
+}
+.tap_to_fadein {
+    font-family: musiceria_font;
+    position: relative; 
+    position: fixed;
+    top: 62%;
+    left: 37%;
+    font-size: 40px;
+    color: white;
+    font-family: fantasy;
+    animation: fadeIn 3s;
+    animation-fill-mode: both;
+}
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 500px;
+  text-align: center;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  
+  border-radius: 5px;
+  
+  scroll-behavior: smooth;
+  
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-points-x: repeat(500px);
+  scroll-snap-type: mandatory;
+  text-decoration: none;
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  flex-shrink: 0;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  text-decoration: none;
+  transform: scale(0.95);
+}
+.slides > div:target {
+  transform: scale(0.95);
+}
+img{
+position: absolute;
+top: 0;
+left: 0;
+}
+.author-info {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  text-decoration: none;
+}
+.author-info a {
+  color: white;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 6rem;
+  height: 3rem;
+  font-size: 3rem;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  /*border-radius: 50%;*/
+  background: white;
+  color: black;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+  opacity: 0.5;
+}
+.slider > a:active {
+  top: 10px;
+}
+.slider > a:focus {
+  background: #000;
+}
+.slider > a:visited {
+　color: black;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+#tts {
+    font-size: 3rem;
+    top:75%;
+    font-family: 'Poiret One', cursive;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  font-family: 'Ropa Sans', sans-serif;
+}
+.links2 {
+   font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #fff;
+  width: 420px;
+  background-color: #EB0A54;
+  
+  padding: 2rem 4rem;
+  border-radius: 8rem;
+  margin-right: 4rem;
+  
+  box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+               0 1px  6px  rgba(0, 0, 0, .05),
+               0 8px  8px  rgba(0, 0, 0, .1), 
+               0 16px 16px rgba(0, 0, 0, .1), 
+               8px 32px 32px rgba(0, 0, 0, .15), 
+               8px 64px 64px rgba(0, 0, 0, .15);
+}
+.links_lock {
+   font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #fff;
+  width: 420px;
+  background-color: #828080;
+  
+  padding: 2rem 4rem;
+  border-radius: 8rem;
+  margin-right: 4rem;
+  
+  box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+               0 1px  6px  rgba(0, 0, 0, .05),
+               0 8px  8px  rgba(0, 0, 0, .1), 
+               0 16px 16px rgba(0, 0, 0, .1), 
+               8px 32px 32px rgba(0, 0, 0, .15), 
+               8px 64px 64px rgba(0, 0, 0, .15);
+}
+.br::before {
+    		content: "\A" ;
+			white-space: pre ;
+}
+.titlemop{
+    font-size: 30px;
+    color: skyblue;
+}
+.kaikin{
+    font-size: 10px;
+}
+
+#result_scr{
+    display: block;
+    font-size: 3rem;
+    top:10%;
+    height: 80%;
+    width: 80%;
+    background-color: #fcfcfc;
+background-image: radial-gradient(#eee 10%, transparent 20%), radial-gradient(#eee 10%, transparent 20%);
+background-size: 20px 20px;
+background-position: 0 0, 10px 10px;
+    position: fixed;
+    font-family: 'Poiret One', cursive;
+ }

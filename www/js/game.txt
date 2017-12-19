@@ -1,0 +1,43 @@
+var game = new Phaser.Game(sW, sH, Phaser.AUTO, 'phaser-example', { preload: preload, create: create });
+
+function preload() {
+
+    game.load.spritesheet('button', 'img/button.jpg', 225, 225);
+    game.load.image('background','img/back-al.jpg');//img/button.jpg
+
+}
+
+var button;
+var background;
+
+function create() {
+
+    game.stage.backgroundColor = '#182d3b';
+
+    background = game.add.tileSprite(0, 0, sW, sH, 'background');
+
+    button = game.add.button(game.world.centerX - 95, 400, 'button', actionOnClick, this, 2, 1, 0);
+
+    button.onInputOver.add(over, this);
+    button.onInputOut.add(out, this);
+    button.onInputUp.add(up, this);
+
+}
+
+function up() {
+    console.log('button up', arguments);
+}
+
+function over() {
+    console.log('button over');
+}
+
+function out() {
+    console.log('button out');
+}
+
+function actionOnClick () {
+
+    background.visible =! background.visible;
+
+}  
