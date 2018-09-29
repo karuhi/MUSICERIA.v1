@@ -11,3 +11,5 @@
 ## ライセンスについて  
 Copyright © 2017 [Karuh(かる)](http://karuh.azurewebsites.net)  
 Copyright © 2016 Asial Corporation
+
+学園祭？
